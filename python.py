@@ -32,12 +32,13 @@ print(add_numbers([2,3,4,5,6,7]))
 
 # Write a Python function that takes a list of integers as input and returns
 #  a new list with all the even numbers removed.
-def remove_even_numbers(nums):
+def remove_even_numbers(*nums):
     empty=[]
     for i in nums:
         if i%2!=0:
-            return empty.push(i)
-print(remove_even_numbers([1,2,3,4,5,6,7,8,9,10]))
+            empty.append(i)
+    return empty
+print(remove_even_numbers(1,2,3,4,5,6,7,8,9,10))
 
 
 # Write a Python function that takes a list of integers as input and returns the
@@ -56,8 +57,10 @@ print(output)
 # # Write a Python function that takes a list of strings as input and returns a new 
 # # list with all the strings capitalized.
 def caps(name):
-    return  name.capitalize()
-print(caps(["Regina","Chege","Wairimu"]))
+    for name in names:
+        if name in names :
+            name=name.capitalize()
+    return name
 
              
 
