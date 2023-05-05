@@ -57,16 +57,12 @@ print(output)
 # # Write a Python function that takes a list of strings as input and returns a new 
 # # list with all the strings capitalized.
 def caps(name):
-    for name in names:
-        if name in names :
-            name=name.capitalize()
+    for name in name:
+        if name in name :
+            name=name.upper()
     return name
 
-             
-
-
-
-
+caps("Regina")
 
 
 
