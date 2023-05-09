@@ -103,13 +103,82 @@ distinct_words("My ,name, is ,Richard")
 # list_a = 1, 2, 3, 4, 
 # list_b = 2, 3, 4, 5
 
-def common_number():
-    empty=[]
-    list_a = [1, 2, 3, 4,] 
-    list_b = [2, 3, 4, 5]
-    new_list=list_a+list_b
-    new_list=[n for n in new_list if n.search(2)]
-    empty.append(new_list)
-print(common_number())
+# def common_number():
+#     empty=[]
+#     list_a = [1, 2, 3, 4,] 
+#     list_b = [2, 3, 4, 5]
+#     new_list=list_a+list_b
+#     new_list=[n for n in new_list if n.search(2)]
+#     empty.append(new_list)
+# print(common_number())
 
+
+# Write a Python program that takes a list of strings as input and outputs the number of times 
+# each string appears in the list, using a dictionary and conditional statements.
+def string_count(words):
+    string_count = {}
+    for i in words:
+        if i =="chege":
+            string_count.append[i] += 1
+        else:
+            string_count[words] = 1
+    return string_count
+
+lst = ["Ann", "chege", "wairimu","chege" "Philiph"]
+print(string_count(words))
+
+# Write a Python program that takes a list of numbers as input and outputs the median of the numbers 
+def median(numbers):
+    numbers.sort()
+    length = len(numbers)
+    if length % 2 == 0:
+        median = (numbers[length//2] + numbers[length//2 - 1])/2
+    else:
+        median = numbers[length//2]
+    return median
+
+
+numbers = [1, 2, 3, 4, 5]
+print(median(numbers)) 
+
+
+
+# Write a Python program that takes a list of numbers as input and outputs the second largest number in 
+# the list using conditional statements and a for loop.
+
+def second_largest_number(numbers):
+    largest = 0
+    second_largest = 0
+    for i in numbers:
+        if largest>i:
+            print (i)
+        elif i<second_largest:
+            print(i)
+        else:
+            print ("null")
+second_largest_number([1,4,5,7,90,98,67])
+
+
+numbers=[2,3,4,34,78,12,4]
+print(second_largest_number(numbers))
+
+# Write a Python program that takes a year as input and determines if it is a leap year.
+def leap(year):
+    if year%4==0:
+        print ("its a leap year")
+    else:
+        print("not a leap year")
+leap(2020)
+
+# Write a Python program that takes a string as input and checks if it is a palindrome (reads the same 
+# forwards and backwards), ignoring spaces and punctuation.
+def palindrome(name):
+    print (name[::-1])
+    if name!=name:
+        print("its palindrome")
+    else:
+        print("not palindrome")
+
+palindrome("Regina")
+   
 
